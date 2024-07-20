@@ -15,6 +15,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
+    white-space: nowrap;
 }
 
 .logo {
@@ -65,6 +66,7 @@ button {
 
 .links {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 ul {
