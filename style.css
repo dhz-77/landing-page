@@ -66,11 +66,7 @@ button {
 
 .links {
     display: flex;
-    flex-wrap: nowrap;
-}
-
-ul {
-
+    gap: 20px;
 }
 
 li {
