@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 100px;
 }
 
 .logo {
@@ -22,11 +23,12 @@ body {
     color: #F9FAF8;
 }
 
-.links {
-    
+ul {
+    margin: 0; /* this resets the whole header margin which is our intention - I will set the margins i the header section */
 }
 
 .section-1 {
+    padding: 10px 100px;
     flex-grow: 1; /* to expand all space and push down the footer */
 }
 
@@ -57,6 +59,7 @@ button {
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    padding: 20px;
 }
 
 .links {
