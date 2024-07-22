@@ -28,14 +28,17 @@ ul {
     margin: 0; /* this resets the whole header margin which is our intention - I will set the margins i the header section */
 }
 
+/* ----------------------------------- */
+
 .section-1 {
     background-color: #1F2937;
-    padding: 80px 180px;
+    padding: 80px 100px;
     flex-grow: 1; /* to expand all space and push down the footer */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .title-1 {
@@ -115,7 +118,7 @@ a {
 }
 
 .image {
-    padding: 80px;
+/*    padding: 80px; */
     border: solid #3882F6;
     border-width: 5px;
     border-radius: 8px;
