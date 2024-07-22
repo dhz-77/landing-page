@@ -32,13 +32,18 @@ ul {
 
 .section-1 {
     background-color: #1F2937;
-    padding: 80px 100px;
+    padding: 130px 100px;
     flex-grow: 1; /* to expand all space and push down the footer */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-container {
+    max-width: 470px;
+    min-width: 470px;
 }
 
 .title-1 {
@@ -52,12 +57,13 @@ ul {
     font-size: 18px;
     color: #E5E7EB;
     margin-bottom: 20px;
-    max-width: 470px;
+    /*max-width: 470px;*/
 }
 
 button {
     background-color: #3882F6;
     color: white;
+    font-size: 16px;
     border: none;
     border-radius: 3px;
     padding: 10px 30px;
@@ -67,13 +73,7 @@ button {
     background-color: grey;
     color: white;
     padding: 100px;
-    min-width: 200px;
-}
-
-.footer {
-    background-color: #1F2937;
-    color: #E5E7EB;
-    padding: 20px;
+    min-width: 270px;
 }
 
 .links {
@@ -95,8 +95,10 @@ a {
 /* --------------------------- */
 
 .section-2 {
+    /*border: solid black;*/
     display: flex;
     flex-direction: column;
+    padding: 100px 100px;
 }
 
 .title-2 {
@@ -106,19 +108,21 @@ a {
     font-weight: 900;
     color: #1F2937;
 /*    border: solid black;*/
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    white-space: nowrap;
 }
 
 .info-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 70px;
     margin-bottom: 76px;
 }
 
 .image {
-/*    padding: 80px; */
+    padding: 80px;
     border: solid #3882F6;
     border-width: 5px;
     border-radius: 8px;
@@ -136,36 +140,41 @@ a {
 
 .subtext-2 {
     text-align: center;
+    font-size: 16px;
+    color: #1F2937;
 }
 
 /* ---------------------------- */
 
 .section-3 {
-/*    padding: 20px 200px;*/
+    padding: 180px 100px;
     background-color: #E5E7EB;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    justify-content: center;*/
 }
 
 .quote {
+/*    border: solid black;*/
     color:#1F2937;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
+    margin: auto;
+    margin-bottom: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: italic;
     font-size: 36px;
     max-width: 800px;
-    padding: 0px 50px  /* if set to 'width; 800px' -> don't make it grow / shrink */
+    /*padding: 0px 50px  /* if set to 'width; 800px' -> don't make it grow / shrink */
 }
 
 .author {
-    display: flex;
-    justify-content: right;
+/*    border: solid black;*/
+    margin: auto;
+    text-align: right;
+    max-width: 800px;
     font-size: 25px;
     font-weight: 900;
 }
@@ -180,17 +189,21 @@ a {
 .container-4 {
     display: flex;
     justify-content: center;
+    align-items: space-around;
+    flex-basis: 800px; /* width of the container before shrinking starts - in this case, I made it wider.*/
+    flex-wrap: wrap;
     background-color:#3882F6;
     color: white;
-    gap: 50px;
+    gap: 100px;
     padding: 50px;
     border-radius: 5px;
-    margin: 50px;
+    margin: 200px 100px;
     /* min-width: 700px; */
 }
 
 .title-4 {
     font-weight: bold;
+    font-size: 24px;
 }
 
 .button-4 {
@@ -201,14 +214,17 @@ a {
 
 .button-border {
     border: solid white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 30px;
-    width: 130px;
-    height: 40px;
+    width: 180px;
+    height: 60px;
 }
 
 .footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
