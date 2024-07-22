@@ -97,38 +97,53 @@ a {
     font-weight: 900;
     color: #1F2937;
 /*    border: solid black;*/
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .info-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding-bottom: 76px;
+    gap: 70px;
+    margin-bottom: 76px;
 }
 
 .image {
-    padding: 50px;
+    padding: 80px;
     border: solid #3882F6;
+    border-width: 5px;
     border-radius: 8px;
-    width: 50px; /* Otherwise the placeholder gets narrower, wraps and grows the whole section-2 vertically*/
+/*    width: 50px; /* Otherwise the placeholder gets narrower, wraps and grows the whole section-2 vertically*/
 }
 
 .sub-container {
     max-width: 150px;
 }
+
+.subtext-2 {
+    text-align: center;
+}
+
+/* ---------------------------- */
+
 .section-3 {
-    padding: 20px 200px;
+    /*padding: 20px 200px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .quote {
+    color:#1F2937;
     display: flex;
     justify-content: center;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
     font-style: italic;
     font-size: 36px;
-    min-width: 500px;
+    width: 800px; /* Don't make it grow / shrink */
 }
 
 .author {
