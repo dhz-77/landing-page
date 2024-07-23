@@ -20,9 +20,9 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: #F9FAF8;
+    width: 120px;
+    height: auto;
+    padding: 20px
 }
 
 ul {
@@ -62,19 +62,19 @@ ul {
 }
 
 button {
+    width: 200px;
     font-size: 16px;
+    font-weight: 900;
     border: none;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 10px 30px;
     background-color: #3882F6;
     color: white;
 }
 
-.right-container {
-    padding: 100px;
-    min-width: 270px;
-    background-color: grey;
-    color: white;
+img.right-container {
+    width: 650px;
+    height: auto;
 }
 
 .links {
@@ -99,6 +99,7 @@ a {
     flex-direction: column;
     padding: 100px 100px;
     /*border: solid black;*/
+    background-color: #fefefe;
 }
 
 .title-2 {
@@ -116,18 +117,18 @@ a {
 .info-container {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 150px;
     margin-bottom: 76px;
 }
 
-.image {
-    /*    width: 50px; /* Otherwise the placeholder gets narrower, wraps and grows the whole section-2 vertically*/
-    padding: 80px;
-    border-width: 5px;
+img.info {
+    width: 200px;
     border-radius: 8px;
     margin-bottom: 5px;
     border: solid #3882F6;
+    border-width: 10px;
 }
 
 .sub-container {
@@ -140,7 +141,8 @@ a {
 
 .subtext-2 {
     text-align: center;
-    font-size: 16px;
+    font-size: 21px;
+    font-weight: 900;
     color: #1F2937;
 }
 
@@ -191,11 +193,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: space-around;
-    flex-basis: 800px; /* width of the container before shrinking starts - in this case, I made it wider.*/
+    flex-basis: 900px; /* width of the container before shrinking starts - in this case, I made it wider.*/
     flex-wrap: wrap;
     gap: 100px;
     padding: 50px;
-    border-radius: 5px;
+    border-radius: 20px;
+    border-style: double;
     margin: 200px 100px;
     background-color:#3882F6;
     color: white;
@@ -204,6 +207,11 @@ a {
 .title-4 {
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtext-4 {
+    font-size: 18px;
 }
 
 .button-4 {
@@ -218,6 +226,7 @@ a {
     padding: 10px 30px;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 20px;
     border: solid white;
 }
 
